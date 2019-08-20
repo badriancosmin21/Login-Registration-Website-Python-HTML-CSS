@@ -172,7 +172,7 @@ input[type=password] {
   
         -ms-transform: scale(1);
   
-            transform: scale(1); /*change scale(3) to scale(1)*/
+            transform: scale(1);
   }
   
   .effect1 .bg {

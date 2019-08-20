@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bîrlădeanu Adrian-Cosmin</title>
+    <link rel="stylesheet" href="/static/style.css" />
+   
+</head>
+<body id="firstpage">
+        
+    <div class="form">
+        <div class="form1">
+            <img src="static/2.jpg" class="profilepic" width="500" height="500"/>
+            <div class="name">Bîrlădeanu Adrian-Cosmin</div>
+        </div>
+        <div class="form2">
+            <form action="/reg" method="post">
+            <div class="form3"><button type="submit" class="btn fourth">Register</button></form>
+            <div><a href="https://www.facebook.com/adrian.cosmin.37819"><img src="static/facebook.jpg" class="icons" width="40" height="40"/></a></div>
+            <div><a href="https://github.com/badriancosmin21"><img src="static/git.svg" class="icons" width="40" height="40"/></a></div>
+            <div><a href="https://www.linkedin.com/in/adrian-cosmin-birladeanu-b8244017b/"><img src="static/linkedin.jpg" class="icons" width="40" height="40"/></a></div>
+        </div>
+        
+        <form action="/login" method="post"> 
+            <div class="inp"><input type="text" style="resize:horizontal; width:400px; height:50px" 
+                placeholder="Username" name="username" value="{{ request.form.username }}"></div>
+            <div class="inp"><input type="password" style="resize:horizontal; width:400px; height:50px" 
+                placeholder="Password" name="password" value="{{ request.form.password }}" required></div>
+            <div class="item1">
+                <button class="effect1" type="submit">
+                    Login
+                <span class="bg"></span>
+                </button>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
